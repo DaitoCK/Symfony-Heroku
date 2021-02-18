@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'About us |'~ parent()%}
+
+
+{% block body %}
+    <img src="{{ asset('/images/fullstack.png') }}" alt="france" class="my-12 rounded-full shadow-md">
+
+
+    <h1 class="text-gray-800">A propos de nous<span class="text-pink-500">&hearts;</span></h1>
+
+    <p class="my-5">
+        <a href="{{ path('app_home') }}" class="text-indigo-500 hover:text-indigo-600 underline">
+            Revenir à la page d'acceuil
+        </a>
+    </p>
+
+{% endblock %}

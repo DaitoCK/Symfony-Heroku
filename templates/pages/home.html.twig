@@ -1,15 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
-    <h1>Hello ACS</h1>
+{% block title %}Hello ACS!{% endblock %}
 
-    <p>It's currently {{ 'now'|date('h:i A')}}.</p>
-    <footer>
-        <p>
-            &copy; By K.Element.Graphic {{ 'now'|date('Y') }}
-            &middot; <a href="">About</a>
-        </p>
-    </footer>
+{% block body %}
+    <img src="{{ asset('/images/france.png') }}" alt="france" class="h-32 rounded shadow-md my-12">
+
+    <h1 class="my-5 text-3xl sm:text-5xl font-semibold text-indigo-800">Hello ACS</h1>
+    <p class="text-lg text-grey-800">It's currently {{ 'now' | date('h:i A') }}.</p>
 
 {% endblock %}
 
